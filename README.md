@@ -1,11 +1,12 @@
-[![Build Status](https://travis-ci.org/melphi/algobox.svg?branch=master)](https://travis-ci.org/melphi/algobox)
-[![Code Climate](https://codeclimate.com/github/melphi/algobox/badges/gpa.svg)](https://codeclimate.com/github/melphi/algobox)
 
-# algobox
+# algobox | Forked from ![Melphi/algobox](https://github.com/melphi/algobox)
 
 Algobox is an open source algorithmic trading software. The software is used in production however the profitable strategies are in a privare repository.
 
 If you have a profitable trading strategy you would like to automate please write me at info@robertomarchetto.com, we might consider a business deal.
+
+Thanks for the original version
+I will keep working on this repository. See if I could learn something from the original code.
 
 ## Modules
 The features currently implemented are:
@@ -21,7 +22,11 @@ The features currently implemented are:
 ## FAQ
 
 ### How can I install and use it?
-The deployment requires some knowledge of Docker microservices and can be tricky, that's why I did not write an installation guide. If you have any profitable trading strategy you would like to automate please write me at info@robertomarchetto.com, we might consider a business deal.
+First make sure you have the docker environment. Then download the code and execute 
+
+```bash
+docker-compose up
+```
 
 ### What is this platform aimed at?
 The goal of the project is to run profitable strategies and have all the tools requried for analysis, backtest and optimisation. It was not designed for low latency however few milliseconds of lacency are manageable.
