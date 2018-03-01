@@ -5,7 +5,7 @@ services:
     image: mongo:3.4
     command: --storageEngine wiredTiger
     volumes:
-      - /data/db:/data/db
+      - .data/db:/data/db
     networks:
       - algobox
 
@@ -23,7 +23,7 @@ services:
       - MONGO_CONNECTION_URL=mongodb://algobox-mongo:27017
       - MONGO_DATABASE=datamaster
     volumes:
-      - /opt/strategies:/opt/strategies
+      - .data/strategies:/opt/strategies
     networks:
       - algobox
 
@@ -60,7 +60,7 @@ services:
     depends_on:
       - algobox-mongo
     volumes:
-      - /backup:/backup
+      - .data/backup:/backup
     environment:
       - MONGO_STAGE_HOST=algobox-mongo
       - MONGO_STAGE_DATABASE=datacollector

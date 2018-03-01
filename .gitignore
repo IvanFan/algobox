@@ -11,6 +11,7 @@
 **/.idea/
 **/idea/
 *.iml
+.idea
 
 # Build
 **/build/
@@ -23,3 +24,4 @@
 *.log
 *~
 
+.data
